@@ -1,0 +1,148 @@
+:root {
+    /* colors */
+    --clr-dark-blue-1: #262E38;
+    --clr-dark-blue-2: #131518;
+    --clr-grey-1: #969FAD;
+    --clr-grey-2: #7C8798;
+    --clr-orange: #FC7614;
+    --clr-white: #FFFFFF;
+
+    --grd-black: radial-gradient(#232A34, #181E27);
+}
+
+/*-------
+Reset
+-------*/
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 62.5%;
+  height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    background-color: var(--clr-dark-blue-2);
+    color: var(--clr-grey-2);
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*---------
+Components
+----------*/
+.card {
+    background: var(--grd-black);
+    border-radius: 30px;
+    width: 40rem;
+    height: 40rem;
+    padding: 3.2rem;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--clr-dark-blue-1);
+    color: var(--clr-grey-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--star {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+
+    &--rating {
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+
+        &:hover, &:active {
+            color: var(--clr-white);
+        }
+
+        &:hover {
+            background-color: var(--clr-grey-2);
+        }
+
+        &:active {
+            background-color: var(--clr-orange);
+        }
+    }
+}
+
+.img-default {
+    width: 1.6rem;
+}
+
+.img-triggered {
+    width: 16.2rem;
+}
+
+.heading {
+    font-size: 2.8rem;
+    padding: 30px 0 15px;
+    color: var(--clr-white);
+    font-weight: 700;;
+}
+
+.rating {
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.btn {
+    background-color: var(--clr-orange);
+    color: var(--clr-white);
+    outline: none;
+    width: 100%;
+    height: 4.5rem;
+    border: none;
+    border-radius: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--clr-white);
+        color: var(--clr-orange);
+    }
+}
+
+.section-triggered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-align: center;
+    }
+}
+
+.selected-rating {
+    background-color: var(--clr-dark-blue-2);
+    color: var(--clr-orange);
+    padding: .5rem 2rem;
+    border-radius: 2.2rem;
+}
