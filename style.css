@@ -87,9 +87,10 @@ Components
   width: 5rem;
   height: 5rem;
   cursor: pointer;
+  border: none;
 }
 
-.circle--rating:hover, .circle--rating:active {
+.circle--rating:hover, .circle--rating:focus {
   color: var(--clr-white);
 }
 
@@ -97,8 +98,8 @@ Components
   background-color: var(--clr-grey-2);
 }
 
-.circle--rating:active {
-  background-color: var(--clr-orange);
+.circle--rating:focus {
+  background: var(--clr-orange);
 }
 
 .img-default {

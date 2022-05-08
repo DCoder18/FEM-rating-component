@@ -75,8 +75,9 @@ Components
         width: 5rem;
         height: 5rem;
         cursor: pointer;
+        border: none;
 
-        &:hover, &:active {
+        &:hover, &:focus {
             color: var(--clr-white);
         }
 
@@ -84,8 +85,8 @@ Components
             background-color: var(--clr-grey-2);
         }
 
-        &:active {
-            background-color: var(--clr-orange);
+        &:focus {
+            background: var(--clr-orange);
         }
     }
 }
