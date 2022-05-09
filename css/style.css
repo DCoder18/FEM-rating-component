@@ -57,8 +57,8 @@ Components
   background: var(--grd-black);
   border-radius: 30px;
   width: 40rem;
-  height: 40rem;
   padding: 3.2rem;
+  margin: 2rem;
 }
 
 .circle {
@@ -88,6 +88,8 @@ Components
   height: 5rem;
   cursor: pointer;
   border: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .circle--rating:hover, .circle--rating:focus {
@@ -108,6 +110,7 @@ Components
 
 .img-triggered {
   width: 16.2rem;
+  padding-bottom: 30px;
 }
 
 .heading {
@@ -136,6 +139,8 @@ Components
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .btn:hover {
@@ -163,7 +168,7 @@ Components
   text-align: center;
 }
 
-.selected-rating {
+.selected-rating-container {
   background-color: var(--clr-dark-blue-2);
   color: var(--clr-orange);
   padding: .5rem 2rem;
