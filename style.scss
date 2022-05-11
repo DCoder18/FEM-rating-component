@@ -42,6 +42,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 2rem;
 }
 
 
@@ -51,45 +52,42 @@ Components
 .card {
     background: var(--grd-black);
     border-radius: 30px;
-    width: 40rem;
+    max-width: 40rem;
     padding: 3.2rem;
-    margin: 2rem;
 }
 
 .circle {
-    border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
-    background-color: var(--clr-dark-blue-1);
-    color: var(--clr-grey-2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border-radius: 50%;
+  background-color: var(--clr-dark-blue-1);
+  color: var(--clr-grey-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &--star {
-        width: 4.8rem;
-        height: 4.8rem;
-    }
+  &--star {
+      width: 4.8rem;
+      height: 4.8rem;
+  }
 
-    &--rating {
-        width: 5rem;
-        height: 5rem;
-        cursor: pointer;
-        border: none;
-        transition: all 300ms ease-in-out;
+  &--rating {
+      width: 5rem;
+      height: 5rem;
+      cursor: pointer;
+      border: none;
+      transition: all 300ms ease-in-out;
 
-        &:hover, &:focus {
-            color: var(--clr-white);
-        }
+      &:hover, &:focus {
+          color: var(--clr-white);
+      }
 
-        &:hover {
-            background-color: var(--clr-grey-2);
-        }
+      &:hover {
+          background-color: var(--clr-grey-2);
+      }
 
-        &:focus {
-            background: var(--clr-orange);
-        }
-    }
+      &:focus {
+          background: var(--clr-orange);
+      }
+  }
 }
 
 .img-default {
@@ -149,4 +147,36 @@ Components
     color: var(--clr-orange);
     padding: .5rem 2rem;
     border-radius: 2.2rem;
+}
+
+
+@media (max-width: 35em) {
+  .card {
+    max-width: 32.5rem;
+  }
+
+  .rating {
+    gap: 1.6rem;
+  }
+
+  .circle--rating {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .img-default {
+    width: 1.3rem;
+  }
+
+  .img-triggered {
+    width: 16.2rem;
+  }
+
+  .heading {
+    font-size: 2.4rem;
+  }
+
+  .body {
+    font-size: 1.4rem;
+  }
 }

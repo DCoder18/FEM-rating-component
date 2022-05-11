@@ -48,6 +48,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 2rem;
 }
 
 /*---------
@@ -56,15 +57,12 @@ Components
 .card {
   background: var(--grd-black);
   border-radius: 30px;
-  width: 40rem;
+  max-width: 40rem;
   padding: 3.2rem;
-  margin: 2rem;
 }
 
 .circle {
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
   background-color: var(--clr-dark-blue-1);
   color: var(--clr-grey-2);
   display: -webkit-box;
@@ -173,5 +171,30 @@ Components
   color: var(--clr-orange);
   padding: .5rem 2rem;
   border-radius: 2.2rem;
+}
+
+@media (max-width: 35em) {
+  .card {
+    max-width: 32.5rem;
+  }
+  .rating {
+    gap: 1.6rem;
+  }
+  .circle--rating {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .img-default {
+    width: 1.3rem;
+  }
+  .img-triggered {
+    width: 16.2rem;
+  }
+  .heading {
+    font-size: 2.4rem;
+  }
+  .body {
+    font-size: 1.4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
